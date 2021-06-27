@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand navbar-light menu_bottom-color">
+        
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    
+                <input class="check" type="checkbox" name="" id="hambruger">
+                <label for="hambruger">
+                    <div class="hambruger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>    
+                <div class="menu">  
+                     <ul class=" navbar-nav">
+                         <li class="nav-item active" > <a class="nav-link" href=""> Личная информация</a></li>
+                         <li class="nav-item">  <a  class="nav-link" href="">Опыт</a></li>
+                         <li class="nav-item">  <a class="nav-link"  href="">JavaScript</a></li>
+                         <li  class="nav-item"> <a  class="nav-link" href="">О себе</a></li>
+                     </ul>
+                </div>
+             </div>  
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-sm navbar-light menu_bottom-color">
+  <div class="container-md">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 margin-auto">
+           <li class="nav-item active"><a class="nav-link" href="#sec1"> Личная информация</a></li>
+           <li class="nav-item"><a  class="nav-link" href="#sec2">Опыт</a></li>
+           <li class="nav-item"><a class="nav-link"  href="#sec3">JavaScript</a></li>
+           <li  class="nav-item"><a  class="nav-link" href="#sec4">О себе</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+    <section class="section1 text-center" id="sec1">
+        <div class="container-md">
+            <h1 class="text-center m-5">Анкета</h1>
+            <img class="mb-3" src="img/sec1.jpg" alt="anketa">
+            <h3 class="mb-3 ">Личная информация</h3>
+            <div class="flex-wrap  align-items-center  flex-column form-group justify-content-center d-flex text-center">
+                <input type="text" class="mb-3 col-lg-6 col-md-6 col-sm-6 form-control1" placeholder="ФИО">
+                <select class="mb-3 col-lg-4 col-md-4 col-sm-3 form-control-select" name="years" required>
+                    <option class="active">Год рождения</option>   
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                </select> 
+                <input type="text" class="mb-3   col-lg-6 col-md-6 col-sm-6  form-control1" placeholder="Место проживания">
+                <input type="text" class="mb-3 col-lg-6 col-md-6 col-sm-6  form-control1" placeholder="Skype">
+                <input type="email" class="mb-3 col-lg-6 col-md-6 col-sm-6  form-control1" placeholder="E-mail">
+            </div>
+        </div>
+    </section>
+    <section class="section2 text-center mb-5" id="sec2">
+        <div class="container-md">
+            <img class="m-3" src="img/sec2.jpg" alt="">
+            <h3 class="mb-5">Расскажите о своем опыте</h3>
+            <div class="m-3 row">
+                <div class="row__item col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>БЭМ/OOCSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Stylus/SASS/LESS</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Работаю с SVG</label>
+                    </div>
+                </div>
+                <div class="row__item col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Верстаю семантично</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>ES2015/ES2016</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Gulp/GRUNT</label>
+                    </div>
+                </div>
+                <div class="row__item col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Webpack</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>jQuery</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox" class="form-check-input" >
+                        <label for="checkbox" class="form-check-label"></label>Испоьзую Git</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section3 text-center  mb-5" id="sec3">
+        <div class="conrainer-md">
+            <img class="m-3" src="img/sec3.jpg" alt="">
+            <h3 class="mb-5">Уровень владения JavaScript</h3>
+            <div class="Js d-flex justify-content-center">
+                <div class="levels">
+                    <div class="level">
+                      <p>не владею</p>
+                    </div>
+                  
+                    <div class="level">
+                      <p>использую готовые <br> решения
+                      </p>
+                    </div>
+                  
+                    <div class="level">
+                      <p>использую готовые решения <br> и умею переделывать</p>
+                    </div>
+                  
+                    <div class="level">
+                      <p>пишу сложный js с нуля</p>
+                    </div>
+                  
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                  
+                    <div class="knob"></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4 text-center " id="sec4">
+        <div class="container-md">
+            <img class="m-3" src="img/sec4.jpg" alt="">
+            <h3 class="mb-3">Расскажите о себе</h3>
+                        <div class="flex-wrap  align-items-center  flex-column form-group justify-content-center d-flex text-center">
+
+            <p class="mb-3 col-lg-6 col-md-6 col-sm-6 ">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас</p>
+            
+            
+            <textarea class="textarea mb-3 col-lg-6 col-md-6 col-sm-6 form-control1" name="msg" id="" cols="30" rows="10">Понравилось тем, что...</textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Готово</button>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
