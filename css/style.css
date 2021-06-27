@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu_bottom-color {
+  border-bottom: solid 2px #6c757d;
+}
+
+section {
+  margin: 20px 0px;
+}
+
+select, option {
+  color: #6c757d;
+}
+
+.form-control-select {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: checkbox;
+  -moz-appearance: none;
+  appearance: revert;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control1 {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.levels {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.level p {
+  font-size: 1.4vw;
+  height: 3vw;
+  margin-bottom: 0.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.level::after {
+  content: "";
+  height: 3vw;
+  width: 1px;
+  z-index: 1;
+}
+
+.level:nth-child(1) {
+  width: 20%;
+}
+
+.level:nth-child(2) {
+  width: 25%;
+}
+
+.level:nth-child(3) {
+  width: 30%;
+}
+
+.level:nth-child(4) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 25%;
+}
+
+.level:nth-child(1)::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(22%, white), color-stop(22%, #BDBDBD), to(#BDBDBD));
+  background: linear-gradient(0deg, white 0%, white 22%, #BDBDBD 22%, #BDBDBD 100%);
+}
+
+.level:nth-child(2)::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(30%, white), color-stop(30%, #BDBDBD), to(#BDBDBD));
+  background: linear-gradient(0deg, white 0%, white 30%, #BDBDBD 30%, #BDBDBD 100%);
+}
+
+.level:nth-child(3)::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(40%, white), color-stop(40%, #BDBDBD), to(#BDBDBD));
+  background: linear-gradient(0deg, white 0%, white 40%, #BDBDBD 40%, #BDBDBD 100%);
+}
+
+.level:nth-child(4)::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(62%, white), color-stop(62%, #BDBDBD), to(#BDBDBD));
+  background: linear-gradient(0deg, white 0%, white 62%, #BDBDBD 62%, #BDBDBD 100%);
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1vw;
+  width: 100%;
+  background-color: #BDBDBD;
+  -webkit-clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(45deg, #D1C4E9 0%, #752f82 100%);
+}
+
+.knob {
+  position: absolute;
+  bottom: -4vw;
+  left: 0;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+  -webkit-box-shadow: 0 0 0 1px #9E9E9E;
+          box-shadow: 0 0 0 1px #9E9E9E;
+  border-radius: 50% 10% 50% 50%;
+  z-index: 2;
+}
+
+textarea {
+  resize: none;
+}
+
+.check {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .margin-auto {
+    margin: auto;
+  }
+}
